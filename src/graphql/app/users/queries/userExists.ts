@@ -1,4 +1,4 @@
-import { Database } from "../../../lib/types";
+import { Database } from "../../../../lib/types";
 
 const userExists = async (
   _root: undefined,

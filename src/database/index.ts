@@ -12,9 +12,6 @@ export const connectDatabase = async (): Promise<Database> => {
   console.log("database has been connected");
 
   return {
-    places: db.collection("test_places"),
     users: db.collection("users"),
-    requests: db.collection("requests"),
-    zip_codes: db.collection("zip_codes"),
   };
 };
