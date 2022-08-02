@@ -2,7 +2,7 @@ import { gql } from "apollo-server-express";
 
 export const typeDefs = gql`
   type Place {
-    new: string
+    id: ID
     createdAt: String
     googlePlaceID: String
     userAuthID: String
