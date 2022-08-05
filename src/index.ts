@@ -20,12 +20,12 @@ async function mount(app: Application) {
     introspection: true,
     playground: true,
   });
-  server.applyMiddleware({ app, path: "/" });
+  server.applyMiddleware({ app, path: "/graphql" });
 
   const port = process.env.PORT || 9000;
   app.listen(port);
 
-  console.log(`[app]: 192.168.1.183:${port}`);
+  console.log(`working on port ${port}`);
 }
 
 mount(express());
